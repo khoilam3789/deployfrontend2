@@ -6,3 +6,6 @@ client/dist/
 server/.env
 *.log
 screenshot_*.png
+docs/screenshots/
+backups/
+archive/

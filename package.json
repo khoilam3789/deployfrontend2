@@ -1,0 +1,15 @@
+{
+  "name": "cuahangvaithun-tienphatdat",
+  "version": "1.0.0",
+  "description": "Website Show Sản Phẩm Cửa Hàng Vải Thun Tiến Phát Đạt - Giao diện Thangmay1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "backup": "node scripts/backup_restore.js",
+    "seed": "python scripts/prepare_data.py"
+  }
+}

@@ -761,6 +761,19 @@ app.post('/api/admin/upload', authMiddleware, upload.single('image'), (req, res)
   }
 });
 
+// Serve static client production build if exists
+const clientDistPath = path.join(__dirname, '../client/dist');
+if (fs.existsSync(clientDistPath)) {
+  app.use(express.static(clientDistPath));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api') || req.path.startsWith('/images')) {
+      return next();
+    }
+    res.sendFile(path.join(clientDistPath, 'index.html'));
+  });
+}
+
 app.listen(PORT, () => {
   console.log(`🚀 Express Backend Server đang chạy tại http://localhost:${PORT}`);
 });
+
