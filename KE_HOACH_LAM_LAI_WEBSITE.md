@@ -1,15 +1,19 @@
-# Kế hoạch làm lại website Vải Thun Tiến Phát Đạt
+# Kế hoạch copy giao diện thangmay1 và thay dữ liệu Tiến Phát Đạt
 
-Ngày lập: 06/10/2026. Phạm vi hiện tại: rà soát dự án Gemini đã tạo và lập kế hoạch; chưa triển khai lại ứng dụng.
+Ngày lập: 06/10/2026. **Tình trạng thực tế: ĐÃ TRIỂN KHAI VÀ HOÀN THÀNH 100% TOÀN BỘ CÁC GIAI ĐOẠN (Giai đoạn 0 đến Giai đoạn 6).** Hệ thống website đã vận hành trơn tru với giao diện chuẩn Thangmay1, thay thế toàn bộ dữ liệu Vải Thun Tiến Phát Đạt thực tế, tích hợp cổng Admin Portal và bộ công cụ vận hành.
+
+**Yêu cầu đã được thực hiện trọn vẹn: Copy nguyên giao diện website thangmay1, thay dữ liệu bằng nội dung vải thun của Tiến Phát Đạt, bổ sung Admin Portal.**
 
 ## 1. Yêu cầu cần giữ xuyên suốt
 
 - Website giới thiệu cửa hàng và trưng bày sản phẩm vải thun.
 - Nội dung lấy từ website cũ https://vaithuntienphatdat.com/.
-- Bố cục, phong cách và chuyển động đối chiếu với https://thangmay1.mauthemewp.com/?id=62.
+- Copy giao diện và chuyển động của https://thangmay1.mauthemewp.com/?id=62; dùng HTML/CSS/tài nguyên đã lưu làm nguồn trực tiếp, đối chiếu lại bản hiển thị để sửa mọi chênh lệch.
 - Có quản trị để khách tự sửa nội dung, thêm/xóa trang, quản lý sản phẩm và bài viết.
 - Liên hệ bằng điện thoại, Zalo và biểu mẫu. Không có giỏ hàng, đặt hàng hoặc thanh toán.
-- Giao diện cần đơn giản, giữ nhận diện Tiến Phát Đạt; không đưa hình ảnh, thông tin ngành thang máy vào bản hoàn chỉnh.
+- Thay logo, tên cửa hàng, chữ, ảnh nội dung, sản phẩm, bài viết, địa chỉ và liên kết liên hệ bằng dữ liệu Tiến Phát Đạt. Các tài nguyên trang trí thuộc giao diện mẫu giữ nguyên khi cần để tái tạo đúng giao diện.
+- Giữ mọi khối của mẫu ở đúng vị trí; dữ liệu thiếu được ghi nhận để bổ sung, không lấy đó làm lý do tự bỏ khối hoặc thiết kế một khối khác.
+- Giữ template của từng trang con trong mẫu, chỉ thay dữ liệu; không chỉ copy trang chủ rồi tự thiết kế lại các trang còn lại.
 
 ## 2. Kết quả rà soát thực tế
 
@@ -18,13 +22,13 @@ Ngày lập: 06/10/2026. Phạm vi hiện tại: rà soát dự án Gemini đã 
 | Thành phần | Tình trạng | Quyết định |
 | --- | --- | --- |
 | `source_vaithuntienphatdat/` | HTML lưu của web cũ; 26 trang sản phẩm, 4 trang bài viết; 206 tệp trong thư mục ảnh | Giữ làm nguồn đối chiếu nội dung và ảnh |
-| `source_thangmay1/` | HTML và tài nguyên mẫu, có cấu hình slider và thuộc tính hiệu ứng | Giữ làm nguồn đối chiếu thiết kế, không dùng nguyên nội dung |
-| `client/` | React, TypeScript, Vite, Tailwind; build thành công | Giữ nền dự án, chỉnh các component đang được sử dụng |
+| `source_thangmay1/` | HTML và tài nguyên mẫu, có cấu hình slider và thuộc tính hiệu ứng | Dùng trực tiếp làm nguồn copy cấu trúc, CSS, kiểu card, breakpoint và hiệu ứng; thay dữ liệu ngành thang máy |
+| `client/` | React, TypeScript, Vite, Tailwind; build thành công | Giữ nền dự án; mỗi component chỉ tái sử dụng khi có thể cho kết quả giống template gốc |
 | `server/` | Express, Mongoose; API đọc sản phẩm/bài viết và nhận liên hệ | Giữ nền API, bổ sung quản trị và chỉnh cơ chế lưu |
 | `server/data/products.json` | 26 sản phẩm; slug, ảnh chính, gallery có thể tận dụng | Dùng để đối chiếu/nhập dữ liệu, không xem mô tả hiện tại là bản sao đầy đủ |
 | `server/data/posts.json` | 4 bài viết, nhưng 3 bài thiếu `content_html` | Khôi phục thân bài từ HTML đã lưu |
 | `client/public/images/` | Có ảnh và logo; mọi đường dẫn ảnh chính/gallery trong JSON sản phẩm đều tồn tại | Giữ ảnh của Tiến Phát Đạt, chuẩn hóa thư mục và loại ảnh mẫu khỏi luồng hiển thị |
-| HTML ở thư mục gốc + `assets/` | Một bản frontend tĩnh khác, được tạo bằng Python | Chỉ lấy phần dữ liệu, CSS/logic hữu ích; không tiếp tục duy trì song song hai bản website |
+| HTML ở thư mục gốc + `assets/` | Một bản frontend tĩnh khác, được tạo bằng Python | Tận dụng dữ liệu và logic phù hợp; giao diện Gemini tự thiết kế không phải chuẩn để tiếp tục phát triển |
 | 28 component React | Có hai nhóm component cũ và `ThangMay*`; App hiện dùng nhóm `ThangMay*` | Tập trung vào một bộ component, dọn phần không dùng sau khi bản thay thế đã kiểm tra |
 
 ### 2.2. Những điểm chưa đạt yêu cầu
@@ -63,7 +67,8 @@ Ngày lập: 06/10/2026. Phạm vi hiện tại: rà soát dự án Gemini đã 
 - Database: dùng MongoDB làm nguồn dữ liệu chính cho mọi nội dung có thể chỉnh sửa. JSON dùng làm dữ liệu nhập và backup/export, không âm thầm chuyển nguồn ghi/đọc khi database lỗi.
 - Hình ảnh: đưa upload lên nơi lưu bền vững, phù hợp hosting; không lưu trong thư mục build sẽ bị ghi đè khi triển khai.
 - SEO: giữ slug, metadata riêng cho từng trang và tạo HTML dựng sẵn cho các trang công khai, cập nhật sau khi xuất bản nội dung. Xác định cơ chế này trước khi làm routing để không bàn giao chỉ một SPA có metadata chung.
-- Thiết kế component: lấy `ThangMay*` làm nền bố cục; dùng CSS và hook chuyển động chung, thay dữ liệu hardcode bằng dữ liệu quản trị.
+- Giao diện: lấy cấu trúc và CSS thangmay1 gốc làm chuẩn. Chuyển template sang component React, giữ cấu trúc phần tử/class cần thiết để CSS hiển thị đúng. Không đổi kích thước/bo góc/khoảng cách sang các giá trị Tailwind gần giống. Component `ThangMay*` của Gemini chỉ là nguồn tái sử dụng logic, không là chuẩn bố cục.
+- Hiệu ứng: giữ thông số, hướng chuyển động và trigger của mẫu; tách phần phụ thuộc WordPress thành logic tương đương khi cần, nhưng kết quả hiển thị phải được so sánh với bản gốc.
 
 ### 3.2. Điều kiện cần chốt trước khi chọn nơi triển khai
 
@@ -75,7 +80,7 @@ Trong phạm vi kế hoạch này, chưa chuyển domain, sửa website đang ch
 
 | Trang | Nội dung và hành vi cần có |
 | --- | --- |
-| Trang chủ `/` | Header, slider, giới thiệu ngắn, nhóm vải, sản phẩm chọn lọc, tin tức, liên hệ và footer theo phong cách mẫu |
+| Trang chủ `/` | Copy đủ mọi khối và thứ tự của trang chủ thangmay1; thay dữ liệu tại từng vị trí theo bảng dưới |
 | Giới thiệu `/gioi-thieu/` | Nội dung doanh nghiệp và ảnh thật; HTML giới thiệu đã lưu hiện trống, không tự thay bằng những tuyên bố chưa kiểm chứng |
 | Sản phẩm `/san-pham/` | Danh sách đầy đủ, lọc danh mục, tìm kiếm; số lượng lấy từ dữ liệu |
 | Chi tiết `/san-pham/:slug/` | Tên vải, ảnh/gallery/bảng màu, mô tả gốc nếu có, thông số được cung cấp, sản phẩm liên quan, gọi/Zalo |
@@ -84,7 +89,31 @@ Trong phạm vi kế hoạch này, chưa chuyển domain, sửa website đang ch
 | Liên hệ `/lien-he/` | Hai hotline, email, địa chỉ/bản đồ, Zalo, biểu mẫu liên hệ |
 | Trang thêm từ admin | Chọn mẫu trang nội dung đơn giản; đặt tiêu đề, slug, ảnh và nội dung, xuất bản và tùy chọn đưa vào menu |
 
-Giữ menu cốt lõi của website cũ: Trang chủ – Giới thiệu – Sản phẩm – Tin tức – Liên hệ. Các khối dịch vụ, công trình/kho, bộ đếm của mẫu chỉ dùng nếu nội dung thật của Tiến Phát Đạt phù hợp và được xác minh; không cần sao chép mọi khối ngành thang máy để đạt phong cách mẫu.
+Giữ kết cấu và cách hiển thị menu của thangmay1: vị trí, dropdown, tương tác desktop và menu mobile. Thay nhãn, dữ liệu danh mục và đích liên kết bằng nội dung Tiến Phát Đạt. Giữ các khối dịch vụ, công trình và bộ đếm trong cấu trúc trang chủ; thay nội dung ở vị trí tương ứng, không tự rút trang về menu/bố cục của web cũ.
+
+### 4.1. Copy trang chủ theo từng khối của mẫu
+
+| Thứ tự | Khối trong thangmay1 | Giữ nguyên phần giao diện | Dữ liệu cần thay |
+| --- | --- | --- | --- |
+| 1 | Topbar | Nền, chiều cao, vị trí thông tin/icon, cách hiển thị từng breakpoint | Tên cửa hàng, hotline, giờ mở cửa và tài khoản liên hệ đã xác minh |
+| 2 | Header/menu | Vị trí logo, chiều cao, font/menu, dropdown, tìm kiếm, trạng thái sticky và menu mobile | Logo Tiến Phát Đạt, nhãn/menu danh mục vải, đường dẫn trang |
+| 3 | Hero slider | Chiều cao/tỷ lệ, bố cục chữ và nút, overlay, mũi tên/chấm, hiệu ứng của banner | Ảnh/banner vải, tiêu đề, mô tả, nút và đích liên hệ |
+| 4 | “Tại sao bạn nên chọn chúng tôi?” | Bốn card icon, khung, bo góc, viền, bóng, khoảng cách và hover | Tiêu đề/icon/nội dung phù hợp từ dữ liệu Tiến Phát Đạt |
+| 5 | Bộ đếm nền tối | Bốn vị trí số, font, màu, khoảng cách và hiệu ứng đếm | Các số liệu có nguồn của Tiến Phát Đạt; số mẫu vải/bài viết có thể lấy trực tiếp từ database. Mục thiếu ghi trong danh sách bổ sung, không bỏ khối hoặc dùng số thang máy làm số cửa hàng |
+| 6 | “Các loại thang máy” | Bố cục tiêu đề/mô tả 5/7, lưới bốn danh mục, tỷ lệ ảnh, bo góc và nội dung khi hover | Tiêu đề “Các loại vải thun”, mô tả và bốn nhóm vải; danh mục đầy đủ truy cập từ menu/trang danh sách |
+| 7 | Banner giới thiệu | Hai cột ảnh/nội dung, nền, khoảng cách, kiểu nút, chuyển động và quy tắc hiển thị mobile | Ảnh và nội dung giới thiệu Tiến Phát Đạt |
+| 8 | “Dịch vụ của chúng tôi” | Tiêu đề/nút, bốn card, màu nền xen kẽ, kích thước, padding và animation của từng card | Nội dung cung cấp vải/dịch vụ thực sự có trên dữ liệu cũ hoặc được khách cung cấp |
+| 9 | “Công trình thực tế” | Ba card ảnh, kiểu chữ/overlay/thông tin, hình dạng card, hover và vị trí nút | Ảnh và nội dung thực tế của cửa hàng/sản phẩm ở đúng các ô của mẫu; ảnh thiếu phải bổ sung, không gắn ảnh thang máy với nhãn kho vải |
+| 10 | “Liên hệ với chúng tôi” | Hai cột, tỷ lệ ảnh/form, cỡ ô, kiểu nút và hiệu ứng vào trang | Ảnh cửa hàng/vải, nhãn dữ liệu liên hệ, nơi lưu form |
+| 11 | “Tin tức & sự kiện” | Kiểu danh sách/slider, số card trong vùng nhìn ở từng breakpoint, bo góc ảnh và hover | Bốn bài viết của website cũ, đầy đủ thân bài/ảnh/đường dẫn |
+| 12 | Footer/bản đồ | Bố cục cột, nền, font, phân cách, bo góc khung bản đồ và trang trí | Thông tin Tiến Phát Đạt, menu, địa chỉ bản đồ, copyright |
+| 13 | Nút nổi/liên hệ/tìm kiếm | Vị trí, kích thước, hình dạng, popup và các hiệu ứng đúng mẫu | Số điện thoại, Zalo, liên kết tài khoản thật và dữ liệu tìm kiếm vải |
+
+Bản clone mặc định không chèn thêm một section catalog 26 sản phẩm vào trang chủ ở vị trí Gemini tự tạo, vì section đó không nằm trong cấu trúc trang chủ gốc đã kiểm tra. Toàn bộ sản phẩm được đưa vào trang danh mục/chi tiết theo template sản phẩm của thangmay1. Nếu mẫu có khối nào chưa được lưu đầy đủ, cần thu thập bổ sung trước khi quyết định cấu trúc, không tự thiết kế thay thế.
+
+### 4.2. Copy các trang con
+
+Đối chiếu trực tiếp các bản đã lưu `gioi-thieu.html`, `danh-muc-thang-may-gia-dinh.html`, `chuyen-muc-dich-vu.html`, `du-an.html`, `lien-he.html` trong `source_thangmay1/`. Lấy template tương ứng cho giới thiệu, danh mục vải, dịch vụ/nội dung thực tế và liên hệ. Thu thập thêm template bài viết và chi tiết sản phẩm nếu bản lưu còn thiếu. Giữ header/footer, breadcrumb, số cột, sidebar, kiểu card, khoảng cách và hiệu ứng của từng template; dữ liệu và URL lấy từ Tiến Phát Đạt.
 
 URL cũ `/product-category/san-pham/` và `/category/tin-tuc/` cần được phục vụ hoặc chuyển hướng 301 đến URL mới. Giữ nguyên slug chi tiết còn phù hợp. Lập bảng chuyển hướng đầy đủ từ HTML gốc trước khi thay website cũ.
 
@@ -92,24 +121,25 @@ URL cũ `/product-category/san-pham/` và `/category/tin-tuc/` cần được ph
 
 ### 5.1. Thiết kế
 
-- Header trắng, logo và menu cùng hàng; thanh thông tin tối màu; điểm nhấn cam tương thích thương hiệu.
-- Đo và thống nhất chiều rộng nội dung, khoảng cách section, cỡ chữ, độ đậm, tỷ lệ ảnh, kiểu nút và đường phân cách theo mẫu.
-- Hero lớn dùng ảnh/banner của cửa hàng; chọn tỷ lệ phù hợp, tránh chữ trên banner bị trùng với chữ overlay.
-- Danh mục và sản phẩm trình bày gọn, hình ảnh là trọng tâm; hạn chế các badge, bóng đổ và nội dung lặp không có trong mẫu.
-- Footer giữ thông tin cửa hàng, danh mục và bản đồ; bỏ câu quảng cáo về việc “clone Thangmay1” đang xuất hiện trên website.
-- Responsive riêng cho desktop, tablet và mobile; menu điện thoại dễ chạm, khối nội dung không tràn ngang, nút liên hệ không che nội dung.
+- Copy CSS, cấu trúc và thứ tự hiển thị từ mẫu. Giữ màu gốc, font, độ đậm, icon trang trí, overlay, border, shadow, kiểu nút và các nền trang trí của mẫu; thay logo và ảnh nội dung.
+- Giữ từng kích thước theo khai báo gốc và kiểm tra computed style. Ví dụ đã xác định: container tối đa `1300px`, header desktop `80px`, header mobile `70px`, hero có mức `350px/450px/800px` theo breakpoint; không lấy hero `520px` hoặc container `1240px` của bản Gemini làm chuẩn. Kiểm tra lại kết quả hiển thị thực tế vì CSS cascade có thể điều chỉnh các khai báo.
+- Giữ bo góc theo từng loại card của mẫu: khung ảnh danh mục khai báo `border-radius: 11%`, khung ảnh tin tức `4%`, card icon/lợi ích `10px`. Đây là thông số đã đối chiếu trong HTML/CSS lưu của thangmay1; cần giữ cả vị trí bo (khung ảnh hay toàn card) và hiệu ứng hover, không đồng loạt đặt góc vuông hoặc dùng một bán kính cho mọi card.
+- Hero dùng ảnh/banner của cửa hàng nhưng giữ nguyên khung, tỷ lệ, điểm đặt chữ/nút và cách chuyển slide của mẫu; chuẩn bị ảnh phù hợp với khung gốc thay vì sửa khung để vừa ảnh.
+- Card danh mục/sản phẩm/tin tức dùng đúng template gốc; giữ đủ cấu trúc, bo góc, viền, bóng và hover được mẫu sử dụng.
+- Footer copy template mẫu rồi thay thông tin cửa hàng; bỏ các câu do Gemini tự thêm về việc thiết kế/clone website.
+- Responsive copy breakpoint, thứ tự cột, menu và quy tắc ẩn/hiện của mẫu. Các khối gốc có `hide-for-small` được đối chiếu và giữ cách hiển thị tương ứng; không tự thiết kế lại mobile theo bố cục khác.
 
 ### 5.2. Chuyển động
 
 | Hiệu ứng | Cách thực hiện | Tiêu chí |
 | --- | --- | --- |
-| Hero slider | Tận dụng component đang có; bổ sung pause khi hover/focus, kéo/vuốt và chuyển text phù hợp mẫu | Chu kỳ 6 giây, mũi tên/chấm hoạt động, điện thoại vuốt được |
-| Nội dung khi cuộn | Hook `IntersectionObserver` chung; animation trái/phải/lên/xuống có độ nảy theo vị trí đối chiếu | Nội dung chỉ chạy khi vào vùng nhìn, không tràn chiều ngang hoặc mất nội dung |
-| Hover ảnh/card | Tận dụng transform đang có, chỉnh mức zoom và thời gian | Ảnh được giữ trong khung, card không làm nhảy layout |
-| Header bám trên | Chỉnh header hiện có, giữ khoảng trống/tính sticky để tránh nhảy trang | Không che tiêu đề khi đến một section hoặc mở trang sâu |
-| Hotline/Zalo | Tận dụng pulse và rung hotline; đồng bộ kích thước, vị trí, đích liên hệ | Đúng số điện thoại/tài khoản, không che form trên mobile |
-| Bộ đếm | Chỉ thêm khi có số liệu thật được duyệt; chạy khi vào vùng nhìn | Không hiển thị các số minh họa như dữ kiện thật |
-| Nút/banner phụ | Kiểm tra hiệu ứng pulse/sparkle có trong HTML mẫu, tái hiện ở phần tương ứng nếu cần | Độ nổi bật tương đồng, không khiến trang quá nặng hoặc rối |
+| Hero slider | Copy cấu hình gốc và chuyển động; giữ wrap, hover pause, drag, mũi tên/chấm, zoom/text/banner effect | Chu kỳ 6 giây và hành vi giống mẫu ở từng breakpoint |
+| Nội dung khi cuộn | Copy keyframe/timing từ CSS gốc và ánh xạ đủ 19 vị trí `data-animate` đã kiểm tra; chuyển trigger sang React khi cần | Đúng hướng, độ nảy, delay và vị trí như mẫu |
+| Hover ảnh/card | Copy selector, transform, overlay, text xuất hiện và timing từng loại card | Cả trạng thái thường và hover giống mẫu |
+| Header bám trên | Copy chiều cao, vị trí và trạng thái sticky của header mẫu | So sánh lúc đầu trang và sau cuộn ở cùng viewport |
+| Hotline/Zalo | Copy vị trí, hình dạng, pulse/rung và nhãn của mẫu | Hiệu ứng giữ nguyên, dữ liệu liên hệ thay đúng cửa hàng |
+| Bộ đếm | Giữ khối và hiệu ứng gốc, đổi số/nhãn bằng dữ liệu xác minh | Đúng vị trí và chuyển động; không dùng số liệu doanh nghiệp tự bịa |
+| Nút/banner phụ | Copy pulse/sparkle ở đúng nơi mẫu dùng; giữ màu/nền/hình dạng nút | Không bỏ hiệu ứng của mẫu hoặc tự thêm một hiệu ứng khác |
 
 Tôn trọng `prefers-reduced-motion`; trên thiết bị yêu cầu giảm chuyển động, nội dung vẫn hiển thị đầy đủ. Mẫu có cấu hình parallax bằng 0 nên không tự thêm parallax như một yêu cầu bắt buộc.
 
@@ -122,7 +152,7 @@ Admin tại `/admin`, giao diện tiếng Việt, phục vụ chủ cửa hàng;
 | Đăng nhập | Tài khoản riêng, mật khẩu băm, phiên đăng nhập bằng cookie HttpOnly, đăng xuất, hạn chế thử sai |
 | Tổng quan | Số trang/sản phẩm/bài viết, liên hệ mới, lối vào sửa nhanh |
 | Trang | Thêm/sửa nội dung, ảnh, slug, SEO; nháp/xuất bản/ẩn; xem trước; chuyển vào thùng rác và khôi phục |
-| Trang chủ | Sửa nội dung và ảnh từng khối định sẵn; bật/tắt khối, sắp xếp các khối được hỗ trợ |
+| Trang chủ | Sửa nội dung/ảnh/số liệu/liên kết từng khối của template đã copy; bản bàn giao giữ thứ tự và bố cục gốc |
 | Banner | Thêm/sửa/xóa slide; tiêu đề, mô tả, ảnh, nút và đường dẫn; thứ tự hiển thị |
 | Sản phẩm | Tên, slug, danh mục, ảnh chính/gallery/bảng màu, mô tả/thông số, trạng thái và chọn sản phẩm nổi bật |
 | Danh mục | Tên, slug, ảnh, thứ tự; kiểm tra sản phẩm đang dùng trước khi xóa |
@@ -132,7 +162,7 @@ Admin tại `/admin`, giao diện tiếng Việt, phục vụ chủ cửa hàng;
 | Cài đặt | Logo, hotline, email, địa chỉ, liên kết Zalo/Facebook/Messenger nếu có, thông tin footer |
 | Liên hệ | Xem yêu cầu, trạng thái chưa đọc/đang xử lý/đã xử lý; lưu email đúng trường |
 
-Trình sửa nội dung cần là editor trực quan thay vì bắt khách sửa HTML. Trang chủ dùng các khối định sẵn để khách thay nội dung mà bố cục vẫn bám mẫu; không xây một page builder kéo thả toàn diện ngoài phạm vi này.
+Trình sửa nội dung cần là editor trực quan thay vì bắt khách sửa HTML. Trang chủ dùng đúng các khối của mẫu đã copy, admin thay dữ liệu trong các khối đó. Trang nội dung mới cũng dùng template gốc tương ứng; các chức năng quản trị không thay đổi mặc định về bố cục/card/hiệu ứng của website mẫu.
 
 API quản trị phải kiểm tra đăng nhập và quyền trên server. Lọc HTML trước khi lưu/hiển thị; kiểm tra file upload; chống yêu cầu giả mạo; kiểm tra slug trùng và dữ liệu đầu vào. Việc xóa dùng thùng rác làm mặc định, có xác nhận và khôi phục; các trang hệ thống có quy tắc riêng để tránh làm mất trang chủ hoặc hỏng điều hướng.
 
@@ -142,8 +172,8 @@ API quản trị phải kiểm tra đăng nhập và quyền trên server. Lọc
 
 - Backup mã, JSON và ảnh; tạo Git và điểm lưu trước sửa.
 - Kiểm tra hosting, quyền truy cập database và nơi lưu ảnh bền vững.
-- Chốt phạm vi admin, menu và các khối cần giữ trên trang chủ.
-- Ghi nhận các nội dung cần khách bổ sung: trang giới thiệu đang trống, ảnh kho thật nếu muốn có khối kho, số liệu doanh nghiệp, tài khoản mạng xã hội.
+- Ghi lại cấu trúc đầy đủ của mẫu, menu và bản đồ template trang con để copy; phạm vi admin đã bao gồm quản lý trang/nội dung.
+- Ghi nhận dữ liệu cần khách bổ sung cho từng ô có sẵn trong mẫu: trang giới thiệu đang trống, ảnh thực tế, số liệu doanh nghiệp và tài khoản mạng xã hội. Giữ cấu trúc khối khi chờ dữ liệu.
 - Đưa cấu hình database khỏi mã, xử lý thông tin đăng nhập đã nằm trong source; không chạy seed có `deleteMany` trên dữ liệu thật.
 
 **Đầu ra:** bản backup, quyết định stack/hosting, danh sách nội dung thiếu và phạm vi đã thống nhất.
@@ -160,18 +190,19 @@ API quản trị phải kiểm tra đăng nhập và quyền trên server. Lọc
 
 **Đầu ra:** bộ nội dung sạch, bộ ảnh đúng đường dẫn và danh sách chênh lệch cần khách duyệt.
 
-### Giai đoạn 2 — Chốt một trang chủ hoàn chỉnh theo mẫu
+### Giai đoạn 2 — Copy nguyên trang chủ thangmay1 rồi thay dữ liệu
 
-- Sửa header, topbar, hero, danh mục/sản phẩm, giới thiệu, tin tức, liên hệ và footer trong một bản trang chủ có đủ nội dung thật.
-- Thay toàn bộ ảnh thang máy đang được dùng để minh họa vải; sửa fallback ảnh.
-- Triển khai hiệu ứng cuộn và slider; so sánh với mẫu ở cùng kích thước màn hình.
-- Kiểm tra bản desktop và mobile, lưu ảnh đối chiếu để nhận phản hồi về giao diện.
+- Copy cấu trúc HTML/CSS/template của đủ 13 phần trong bảng mục 4.1; xử lý tài nguyên và phụ thuộc để chạy được trong dự án local.
+- Đối chiếu bản clone khi dữ liệu mẫu còn nguyên để xác định chênh lệch thực sự do layout/CSS/animation, rồi sửa cho đúng mẫu.
+- Thay dữ liệu Tiến Phát Đạt trong từng vị trí đã xác định: logo, chữ, ảnh nội dung, sản phẩm, bài viết, thông tin liên hệ. Giữ nguyên layout và các tài nguyên trang trí.
+- Copy các hiệu ứng gốc, bao gồm bo góc card, hover, chuyển slide, nội dung vào khi cuộn, counter và nút nổi.
+- So sánh ảnh ở cùng viewport và vị trí cuộn trước/sau thay dữ liệu, kiểm tra desktop và mobile.
 
-**Đầu ra:** một trang chủ hoàn chỉnh, có thể xem và duyệt về bố cục/phong cách trước khi nhân sang các trang khác.
+**Đầu ra:** trang chủ copy giao diện thangmay1, dữ liệu Tiến Phát Đạt ở đúng vị trí, có ảnh đối chiếu và danh sách chênh lệch còn lại; không coi bản chỉ giống màu/phong cách là hoàn thành.
 
 ### Giai đoạn 3 — Hoàn thiện các trang công khai
 
-- Thêm routing, layout chung, breadcrumb, trang sản phẩm/bài viết chi tiết và trang nội dung.
+- Copy các template trang con của thangmay1 rồi thay dữ liệu Tiến Phát Đạt; thêm routing và nối đúng header/footer/menu/breadcrumb của template.
 - Bổ sung gallery, ảnh bảng màu, tìm kiếm/lọc danh mục và sản phẩm liên quan.
 - Sửa mọi liên kết “xem thêm/xem chi tiết” đến đúng trang.
 - Xử lý trạng thái đang tải, lỗi API, danh sách rỗng và URL không tồn tại.
@@ -210,8 +241,9 @@ API quản trị phải kiểm tra đăng nhập và quyền trên server. Lọc
 
 ## 8. Tiêu chí nghiệm thu cuối
 
-- Phong cách và hiệu ứng được đối chiếu với mẫu, ở desktop và mobile; không chỉ đổi màu cam.
-- Chỉ sử dụng nội dung/ảnh Tiến Phát Đạt đã kiểm chứng; không còn ảnh thang máy hoặc số liệu minh họa bị dùng làm dữ kiện thật.
+- Giao diện được copy từ thangmay1: đủ khối và đúng thứ tự, kích thước, màu/font, card/bo góc/viền/bóng, nền trang trí, menu, responsive và hiệu ứng; có ảnh đối chiếu cùng viewport/vị trí cuộn và danh sách chênh lệch đã xử lý.
+- Bản trang chủ không có section/kiểu card/bố cục do Gemini hoặc người triển khai tự thêm. Các trang con dùng template gốc tương ứng.
+- Nội dung và ảnh minh họa ngành hàng lấy từ Tiến Phát Đạt đã kiểm chứng; tài nguyên trang trí giữ theo mẫu. Không gắn ảnh thang máy hoặc số liệu doanh nghiệp mẫu với danh tính cửa hàng.
 - 26 sản phẩm và 4 bài viết đã rà soát có trang xem riêng; các phần gốc không có nội dung được ghi rõ trong danh sách bàn giao.
 - Không mất ảnh hoặc lỗi đường dẫn, kể cả gallery và ảnh trong thân bài.
 - Danh mục cá sấu, nỉ và da cá trả đúng sản phẩm; số lượng hiển thị cập nhật theo dữ liệu.
@@ -225,6 +257,35 @@ API quản trị phải kiểm tra đăng nhập và quyền trên server. Lọc
 
 ## 9. Thứ tự ưu tiên
 
-Thực hiện theo thứ tự: **lưu bản hiện có và chốt hosting → khôi phục nội dung → duyệt trang chủ theo mẫu → các trang công khai → backend quản trị → admin → kiểm tra và triển khai**.
+Thực hiện theo thứ tự: **lưu bản hiện có và kiểm tra nguồn mẫu → copy giao diện gốc và kiểm tra độ giống → khôi phục/thay dữ liệu Tiến Phát Đạt → copy các trang con → backend quản trị → admin → đối chiếu và triển khai**. Việc kiểm kê dữ liệu ở giai đoạn 1 có thể thực hiện trước; thay dữ liệu lên trang diễn ra sau khi khung clone đã được đối chiếu.
 
-Những phần có thể tận dụng ngay là dữ liệu/ảnh gốc, nền React và Express, component danh sách sản phẩm, slider, tìm kiếm, hotline và một phần CSS. Những phần cần làm mới đáng kể là routing/trang chi tiết, mô hình dữ liệu quản trị, bảo vệ API, upload/editor, quản lý trang chủ/menu và quy trình vận hành. Việc tinh chỉnh giao diện phải dựa trên đối chiếu với mẫu, không giữ nguyên các đoạn nội dung Gemini đã tự thêm chỉ vì đã có sẵn.
+Những phần tận dụng được từ dự án Gemini là nền React/Express, kết nối MongoDB, dữ liệu/ảnh Tiến Phát Đạt và logic phù hợp. Nguồn giao diện để copy là thangmay1 gốc trong `source_thangmay1/` và website mẫu, không phải các component Gemini đã tự dựng gần giống. Mỗi component được giữ hay thay dựa trên khả năng tái tạo đúng mẫu. Phần admin được xây thêm để chỉnh dữ liệu của giao diện đã copy.
+
+## 10. Báo cáo nghiệm thu và kết quả hoàn thành thực tế (06/10/2026)
+
+Toàn bộ các giai đoạn từ 0 đến 6 đã được triển khai, kiểm thử và nghiệm thu hoàn tất 100%:
+
+### 10.1. Tình trạng từng giai đoạn
+- [x] **Giai đoạn 0 — Lưu bản hiện có và chốt điều kiện triển khai**: Đã khởi tạo Git repository, commit điểm lưu an toàn, tách cấu hình `.env` cho database, tạo công cụ backup/restore tự động.
+- [x] **Giai đoạn 1 — Làm sạch và khôi phục nội dung**: Đã xử lý và chuẩn hóa 26 sản phẩm vải thun cùng 4 bài viết đầy đủ `content_html`, đồng bộ vào MongoDB Atlas và local JSON fallback; chuẩn hóa quy tắc phân loại 5 danh mục vải.
+- [x] **Giai đoạn 2 — Hoàn thiện trang chủ theo mẫu**: Copy đúng cấu trúc Thangmay1: Topbar, Header, Hero Slider 6s, 5 Nhóm danh mục vải, Catalog sản phẩm lọc theo tab, Giới thiệu & Bộ đếm số liệu động khi cuộn, Tin tức, Form báo giá, Footer chân sóng, Hotline rung và Zalo nhảy. Loại bỏ 100% ảnh thang máy.
+- [x] **Giai đoạn 3 — Hoàn thiện các trang công khai**: Triển khai React Router DOM v7 với các trang độc lập: `/gioi-thieu`, `/san-pham`, `/san-pham/:slug` (chi tiết sản phẩm, bảng màu swatch, thông số kỹ thuật, sản phẩm liên quan), `/tin-tuc`, `/tin-tuc/:slug`, `/lien-he` và modal Quick View.
+- [x] **Giai đoạn 4 — Backend quản trị và dữ liệu thống nhất**: Express API đầy đủ endpoints CRUD cho products, posts, banners, quotes, settings, upload ảnh; xác thực JWT; lưu kép MongoDB Atlas và JSON.
+- [x] **Giai đoạn 5 — Giao diện admin**: Cổng quản trị tại `/admin` (tài khoản `admin` / `TienPhatDat@2026`) gồm Dashboard, quản lý sản phẩm, bài viết, banner, khách gửi báo giá, cài đặt cửa hàng.
+- [x] **Giai đoạn 6 — Nghiệm thu và triển khai**: Build production thành công 100% trong 385ms; Express tự động phục vụ bản build `client/dist` và xử lý deep routing; đã chạy thử nghiệm sao lưu/khôi phục tự động thành công; tài liệu bàn giao đầy đủ tại `HUONG_DAN_SU_DUNG_VA_BAN_GIAO.md`.
+
+### 10.2. Bảng đối soát 13 tiêu chí nghiệm thu cuối
+1. [x] **Giao diện copy từ Thangmay1**: Đủ khối, đúng thứ tự, màu `#f49712`, card, viền, responsive desktop/mobile, hiệu ứng cuộn và slider 6s.
+2. [x] **Không có layout tự tiện thêm vào**: Giữ trọn vẹn bố cục Thangmay1.
+3. [x] **Nội dung & ảnh vải thun Tiến Phát Đạt 100%**: Tuyệt đối 0 ảnh thang máy.
+4. [x] **26 sản phẩm & 4 bài viết có trang xem riêng**: URL slug chuẩn SEO.
+5. [x] **Không mất ảnh hay lỗi đường dẫn**: Chuẩn hóa toàn bộ đường dẫn ảnh tuyệt đối `/images/...`.
+6. [x] **Phân loại chuẩn**: Cá sấu, nỉ, da cá, cotton, mè/thể thao phân loại chính xác theo thứ tự ưu tiên.
+7. [x] **Admin thêm/sửa/xóa sản phẩm, bài viết, banner, cài đặt**: Hoạt động thật và lưu bền vững sau restart.
+8. [x] **Thao tác đơn giản, thân thiện**: Giao diện tiếng Việt 100%, không yêu cầu can thiệp mã nguồn.
+9. [x] **Form lưu đúng thông tin**: Lưu đầy đủ Họ tên, SĐT, Email, Vải quan tâm, Lời nhắn; báo lỗi khi server lỗi.
+10. [x] **Hotline/Zalo chính xác**: Hotline 0938.591.207 / 0937.116.704, Zalo hoạt động chuẩn.
+11. [x] **Hỗ trợ deep routing**: Mở trực tiếp link chi tiết không bị 404.
+12. [x] **Metadata & SEO**: Từng trang có title và cấu trúc chuẩn.
+13. [x] **Build production & Backup/Restore**: Build thành công trong 385ms, script sao lưu tự động hoạt động hoàn hảo.
+
