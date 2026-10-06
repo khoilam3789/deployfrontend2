@@ -1,0 +1,642 @@
+[
+  {
+    "id": 1,
+    "slug": "bo-gan-tici",
+    "title": "BO GÂN TICI",
+    "categoryId": "cotton",
+    "category": "Vải Thun Cotton & Tici",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-bo-gân-tici-4c-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-bo-gân-tici-4c-450x450.jpg",
+      "/images/products/vải-bo-gân-tici-4c.jpg",
+      "/images/products/bảng-màu-bo-gân-tici.jpg",
+      "/images/products/áo-bal-lỗ-bo-gân-tici.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-bo-gân-tici.jpg"
+    ],
+    "description": "Vải thun BO GÂN TICI chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Thun Cotton & Tici",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "ca-sau-cotton-luc-giac",
+    "title": "CÁ SẤU COTTON LỤC GIÁC",
+    "categoryId": "ca-sau",
+    "category": "Vải Thun Cá Sấu",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/cá-sấu-cotton-lục-giác-may-áo-polo-450x450.jpg",
+    "gallery": [
+      "/images/products/cá-sấu-cotton-lục-giác-may-áo-polo-450x450.jpg",
+      "/images/products/cá-sấu-cotton-lục-giác-may-áo-polo.jpg",
+      "/images/products/Cá-sấu-tổ-ong-lục-giác-.jpg",
+      "/images/products/vải-cá-sấu-tổ-ong-lục-giác-cotton.jpg",
+      "/images/products/bảng-màu-cá-sấu-cotton-tổ-ong-lục-giác.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-cá-sấu-cotton-tổ-ong-lục-giác.jpg"
+    ],
+    "description": "Vải thun CÁ SẤU COTTON LỤC GIÁC chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Thun Cá Sấu",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "ca-sau-cotton",
+    "title": "CÁ SẤU COTTON 4C",
+    "categoryId": "ca-sau",
+    "category": "Vải Thun Cá Sấu",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-cá-sấu-cotton-4c--450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-cá-sấu-cotton-4c--450x450.jpg",
+      "/images/products/vải-thun-cá-sấu-cotton-4c-.jpg",
+      "/images/products/bảng-màu-cá-sấu-cotton.jpg",
+      "/images/products/áo-polo-cá-sấu-cotton-đẹp.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-cá-sấu-cotton.jpg"
+    ],
+    "description": "Vải thun CÁ SẤU COTTON 4C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Thun Cá Sấu",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "ca-sau-pe-4c",
+    "title": "CÁ SẤU PE 4C",
+    "categoryId": "ca-sau",
+    "category": "Vải Thun Cá Sấu",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-cá-sấu-pe-4c-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-cá-sấu-pe-4c-450x450.jpg",
+      "/images/products/vải-thun-cá-sấu-pe-4c.jpg",
+      "/images/products/bảng-màu-cá-sấu-pe-4c.jpg",
+      "/images/products/áo-polo-cá-sấu-pe-4c.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-cá-sấu-pe-4c.jpg"
+    ],
+    "description": "Vải thun CÁ SẤU PE 4C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Thun Cá Sấu",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 5,
+    "slug": "ca-sau-poly",
+    "title": "CÁ SẤU POLY THÁI 4C",
+    "categoryId": "ca-sau",
+    "category": "Vải Thun Cá Sấu",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-cá-sấu-poli-thái-4c-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-cá-sấu-poli-thái-4c-450x450.jpg",
+      "/images/products/vải-thun-cá-sấu-poli-thái-4c.jpg",
+      "/images/products/bảng-màu-vải-cá-sấu-poly-thái-4-chiều.jpg",
+      "/images/products/phôi-áo-cá-sấu-poly-4c.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-vải-cá-sấu-poly-thái-4-chiều.jpg"
+    ],
+    "description": "Vải thun CÁ SẤU POLY THÁI 4C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Thun Cá Sấu",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "cheo-hoc-sinh",
+    "title": "VẢI THUN BÓNG CÀO/TRICOT",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-bóng-cào-tricot-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-bóng-cào-tricot-450x450.jpg",
+      "/images/products/vải-thun-bóng-cào-tricot.jpg",
+      "/images/products/bảng-màu-vải-bóng-cào-tricot.jpg",
+      "/images/products/vải-thun-bóng-cào-may-quần-thể-dục.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-vải-bóng-cào-tricot.jpg"
+    ],
+    "description": "Vải thun VẢI THUN BÓNG CÀO/TRICOT chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 7,
+    "slug": "cotton-2-chieu",
+    "title": "Cotton 2 chiều",
+    "categoryId": "cotton",
+    "category": "Vải Thun Cotton & Tici",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/screenshot_1705137401-450x450.png",
+    "gallery": [
+      "/images/products/screenshot_1705137401-450x450.png",
+      "/images/products/screenshot_1705137401.png"
+    ],
+    "color_swatches": [],
+    "description": "Vải thun Cotton 2 chiều chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Thun Cotton & Tici",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 8,
+    "slug": "cotton-4-chieu",
+    "title": "Cotton 4 chiều",
+    "categoryId": "cotton",
+    "category": "Vải Thun Cotton & Tici",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/material-450x305.png",
+    "gallery": [
+      "/images/products/material-450x305.png",
+      "/images/products/material.png"
+    ],
+    "color_swatches": [],
+    "description": "Vải thun Cotton 4 chiều chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Thun Cotton & Tici",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 9,
+    "slug": "da-ca-tici",
+    "title": "CÁ SẤU TICI 65 35 4C",
+    "categoryId": "ni-da-ca",
+    "category": "Vải Nỉ & Da Cá",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-cá-sấu-tici-65-35-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-cá-sấu-tici-65-35-450x450.jpg",
+      "/images/products/vải-thun-cá-sấu-tici-65-35.jpg",
+      "/images/products/bảng-màu-cá-sấu-tici-65-35-4C.jpg",
+      "/images/products/vải-thun-cá-sấu-tici-35-65-4C.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-cá-sấu-tici-65-35-4C.jpg"
+    ],
+    "description": "Vải thun CÁ SẤU TICI 65 35 4C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Nỉ & Da Cá",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 10,
+    "slug": "ni-bong-cotton",
+    "title": "MÈ TRÁI BANH 2C",
+    "categoryId": "ni-da-ca",
+    "category": "Vải Nỉ & Da Cá",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-mè-trái-banh-2c-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-mè-trái-banh-2c-450x450.jpg",
+      "/images/products/vải-mè-trái-banh-2c.jpg",
+      "/images/products/bảng-màu-mè-tổ-ong-trái-banh.jpg",
+      "/images/products/vải-mè-trái-banh-thể-thao.jpg",
+      "/images/products/vải-mè-tổ-ong-mè-trái-banh-2C.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-mè-tổ-ong-trái-banh.jpg"
+    ],
+    "description": "Vải thun MÈ TRÁI BANH 2C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Nỉ & Da Cá",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 11,
+    "slug": "poly-2-da",
+    "title": "VẢI THUN POLY 2 DA 4C",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-poly-2da-4c-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-poly-2da-4c-450x450.jpg",
+      "/images/products/vải-thun-poly-2da-4c.jpg",
+      "/images/products/bảng-màu-vải-thun-poly-2da.jpg",
+      "/images/products/vải-poly-2da-may-đồ-thể-thao.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-vải-thun-poly-2da.jpg"
+    ],
+    "description": "Vải thun VẢI THUN POLY 2 DA 4C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 12,
+    "slug": "secxay",
+    "title": "CÁ SẤU MÈ 2 CHIỀU",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-cá-sấu-mè-2c-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-cá-sấu-mè-2c-450x450.jpg",
+      "/images/products/vải-thun-cá-sấu-mè-2c.jpg",
+      "/images/products/bảng-màu-cá-sấu-mè-2c.jpg",
+      "/images/products/vải-thun-cá-sấu-mè-may-đồng-phục.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-cá-sấu-mè-2c.jpg"
+    ],
+    "description": "Vải thun CÁ SẤU MÈ 2 CHIỀU chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 13,
+    "slug": "thun-lanh-interlock",
+    "title": "THUN BỘT POLY/ THUN LẠNH",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-bột-poly-4c-2-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-bột-poly-4c-2-450x450.jpg",
+      "/images/products/vải-thun-bột-poly-4c-2.jpg",
+      "/images/products/áo-thun-thể-thao-bột-poly-4c.jpg",
+      "/images/products/thun-bột.jpg"
+    ],
+    "color_swatches": [],
+    "description": "Vải thun THUN BỘT POLY/ THUN LẠNH chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 14,
+    "slug": "vai-luoi-nhun-x11",
+    "title": "VẢI LƯỚI NHÚN X11",
+    "categoryId": "me-luoi",
+    "category": "Vải Mè & Lưới Nhún",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/x11-450x450.jpg",
+    "gallery": [
+      "/images/products/x11-450x450.jpg",
+      "/images/products/x11.jpg",
+      "/images/products/vải-lưới-nhún-X11.jpg",
+      "/images/products/quần-vải-lưới-x11.jpg"
+    ],
+    "color_swatches": [],
+    "description": "Vải thun VẢI LƯỚI NHÚN X11 chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Mè & Lưới Nhún",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 15,
+    "slug": "vai-luoi-xau-x5",
+    "title": "VẢI LƯỚI XÂU X5",
+    "categoryId": "me-luoi",
+    "category": "Vải Mè & Lưới Nhún",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-lưới-x5--450x450.jpg",
+    "gallery": [
+      "/images/products/vải-lưới-x5--450x450.jpg",
+      "/images/products/vải-lưới-x5-.jpg",
+      "/images/products/bảng-màu-lưới-xâu-x5-new.jpg",
+      "/images/products/bảng-màu-vải-lưới-xâu-x5.jpg",
+      "/images/products/vải-lưới-xâu-x5-may-chống-nắng.jpg",
+      "/images/products/vải-lưới-xâu-x5.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-lưới-xâu-x5-new.jpg",
+      "/images/products/bảng-màu-vải-lưới-xâu-x5.jpg"
+    ],
+    "description": "Vải thun VẢI LƯỚI XÂU X5 chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Mè & Lưới Nhún",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 16,
+    "slug": "vai-thun-65-35",
+    "title": "MÈ CARO 2C",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-mè-caro-nhí-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-mè-caro-nhí-450x450.jpg",
+      "/images/products/vải-thun-mè-caro-nhí.jpg",
+      "/images/products/bảng-màu-mè-caro.jpg",
+      "/images/products/vải-thể-thao-mè-caro-2c.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-mè-caro.jpg"
+    ],
+    "description": "Vải thun MÈ CARO 2C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 17,
+    "slug": "vai-thun-bong-thai",
+    "title": "VẢI BÓNG THÁI/BÓNG CHIẾU",
+    "categoryId": "me-luoi",
+    "category": "Vải Mè & Lưới Nhún",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-bóng-thái-bóng-chiếu--450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-bóng-thái-bóng-chiếu--450x450.jpg",
+      "/images/products/vải-thun-bóng-thái-bóng-chiếu-.jpg",
+      "/images/products/bảng-màu-bóng-thái-bóng-chiếu.jpg",
+      "/images/products/vải-bóng-chiếu-lấp-lánh.jpg",
+      "/images/products/mẫu-áo-bóng-thái-hot-2023.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-bóng-thái-bóng-chiếu.jpg"
+    ],
+    "description": "Vải thun VẢI BÓNG THÁI/BÓNG CHIẾU chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Mè & Lưới Nhún",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 18,
+    "slug": "vai-thun-bot-4-chieu",
+    "title": "VẢI THUN SIU / INTERCLOCK 2C",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/z5126314993922_224271dc082983b426fce31ba6cfdea7-2-450x450.jpg",
+    "gallery": [
+      "/images/products/z5126314993922_224271dc082983b426fce31ba6cfdea7-2-450x450.jpg",
+      "/images/products/z5126314993922_224271dc082983b426fce31ba6cfdea7-2.jpg",
+      "/images/products/z5126314976741_e5052cf8f60d1ecf7f5e91d4f856ea2e-2.jpg",
+      "/images/products/vải-interclock-may-đồ-thể-thao.jpg"
+    ],
+    "color_swatches": [],
+    "description": "Vải thun VẢI THUN SIU / INTERCLOCK 2C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 19,
+    "slug": "vai-thun-kim-cuong",
+    "title": "VẢI THUN KIM CƯƠNG",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-kim-cương-chống-nắng-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-kim-cương-chống-nắng-450x450.jpg",
+      "/images/products/vải-thun-kim-cương-chống-nắng.jpg",
+      "/images/products/bảng-màu-vải-thun-kim-cương.jpg",
+      "/images/products/vải-kim-cương-chống-nắng.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-vải-thun-kim-cương.jpg"
+    ],
+    "description": "Vải thun VẢI THUN KIM CƯƠNG chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 20,
+    "slug": "vai-thun-me-kieu",
+    "title": "VẢI THUN MÈ Ô VUÔNG",
+    "categoryId": "me-luoi",
+    "category": "Vải Mè & Lưới Nhún",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-mè-ô-vuông-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-mè-ô-vuông-450x450.jpg",
+      "/images/products/vải-thun-mè-ô-vuông.jpg",
+      "/images/products/bảng-màu-mè-ô-vuông.jpg",
+      "/images/products/vải-thể-thao-mè-ô-vuông.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-mè-ô-vuông.jpg"
+    ],
+    "description": "Vải thun VẢI THUN MÈ Ô VUÔNG chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Mè & Lưới Nhún",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 21,
+    "slug": "vai-thun-me-mong-mua-gia-re",
+    "title": "VẢI THUN MÈ MƯA MỎNG",
+    "categoryId": "me-luoi",
+    "category": "Vải Mè & Lưới Nhún",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/mè-mưa-450x450.jpg",
+    "gallery": [
+      "/images/products/mè-mưa-450x450.jpg",
+      "/images/products/mè-mưa.jpg",
+      "/images/products/z5118988766642_f6cdb660379296703e218e5aa1c3a841.jpg",
+      "/images/products/z5118988805635_6e2cbdabf6c55d5de0928c69f9bfd7bd.jpg"
+    ],
+    "color_swatches": [],
+    "description": "Vải thun VẢI THUN MÈ MƯA MỎNG chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Mè & Lưới Nhún",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 22,
+    "slug": "vai-thun-pe-2c",
+    "title": "VẢI THUN PE 2C",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-pe-2c-trơn--450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-pe-2c-trơn--450x450.jpg",
+      "/images/products/vải-thun-pe-2c-trơn-.jpg",
+      "/images/products/bảng-màu-vải-thun-pe-2c.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-vải-thun-pe-2c.jpg"
+    ],
+    "description": "Vải thun VẢI THUN PE 2C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 23,
+    "slug": "vai-thun-pe",
+    "title": "NỈ PE CÀO LÔNG",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-nỉ-pe-2c-cào-lông--450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-nỉ-pe-2c-cào-lông--450x450.jpg",
+      "/images/products/vải-thun-nỉ-pe-2c-cào-lông-.jpg",
+      "/images/products/bảng-màu-nỉ-pe-cào-lông.jpg",
+      "/images/products/vải-nỉ-pe-mùa-đông.jpg",
+      "/images/products/vải-nỉ-pe-cào-lông2c.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-nỉ-pe-cào-lông.jpg"
+    ],
+    "description": "Vải thun NỈ PE CÀO LÔNG chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 24,
+    "slug": "vai-thun-tam-lanh",
+    "title": "VẢI THUN TĂM LẠNH 4C",
+    "categoryId": "the-thao",
+    "category": "Thun Lạnh & Thể Thao",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-tăm-lụa-poly-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-tăm-lụa-poly-450x450.jpg",
+      "/images/products/vải-thun-tăm-lụa-poly.jpg",
+      "/images/products/vải-thun-tăm-lạnh-poly-4c.jpg",
+      "/images/products/bảng-màu-tăm-lạnh-poly-4c.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-tăm-lạnh-poly-4c.jpg"
+    ],
+    "description": "Vải thun VẢI THUN TĂM LẠNH 4C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Thun Lạnh & Thể Thao",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 25,
+    "slug": "vai-thun-tici-2c-day",
+    "title": "VẢI THUN TICI 2C DÀY",
+    "categoryId": "cotton",
+    "category": "Vải Thun Cotton & Tici",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-tici-2c-dày-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-tici-2c-dày-450x450.jpg",
+      "/images/products/vải-thun-tici-2c-dày.jpg",
+      "/images/products/bảng-màu-tici-2c-dày.jpg",
+      "/images/products/Tici-2C-6535-2c-220g-250g.png"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-tici-2c-dày.jpg"
+    ],
+    "description": "Vải thun VẢI THUN TICI 2C DÀY chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Thun Cotton & Tici",
+      "hotline_tu_van": "0938.591.207"
+    }
+  },
+  {
+    "id": 26,
+    "slug": "vai-thun-tici-4c",
+    "title": "VẢI THUN TICI 4C",
+    "categoryId": "cotton",
+    "category": "Vải Thun Cotton & Tici",
+    "price": "Liên hệ báo giá",
+    "main_image": "/images/products/vải-thun-tici-4c-450x450.jpg",
+    "gallery": [
+      "/images/products/vải-thun-tici-4c-450x450.jpg",
+      "/images/products/vải-thun-tici-4c.jpg",
+      "/images/products/bảng-màu-vải-thun-tici-4c.jpg",
+      "/images/products/vải-tici-65-35-4c.jpg"
+    ],
+    "color_swatches": [
+      "/images/products/bảng-màu-vải-thun-tici-4c.jpg"
+    ],
+    "description": "Vải thun VẢI THUN TICI 4C chính hãng do Cửa Hàng Vải Thun Tiến Phát Đạt cung cấp sỉ và lẻ toàn quốc. Vải sở hữu độ co giãn tốt, bề mặt dệt mịn màng, bền màu khi giặt và không bị đổ lông xù. Phù hợp may các dòng áo thời trang, áo thun polo, áo đồng phục, local brand và đồ thể thao.",
+    "specifications": {
+      "xuat_xu": "Việt Nam (Cửa Hàng Vải Thun Tiến Phát Đạt)",
+      "ung_dung": "May áo thun thời trang, Local Brand, đồng phục cao cấp, áo thể thao",
+      "chat_lieu": "Vải Thun Cotton & Tici",
+      "hotline_tu_van": "0938.591.207"
+    }
+  }
+]
