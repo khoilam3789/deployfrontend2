@@ -6,6 +6,10 @@ client/dist/
 server/.env
 *.log
 screenshot_*.png
+*_preview.png
+*_verified.png
 docs/screenshots/
 backups/
 archive/
+source_thangmay1/
+source_vaithuntienphatdat/
