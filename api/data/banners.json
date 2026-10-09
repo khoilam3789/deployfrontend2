@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Giải Pháp Vải Thun Toàn Diện\nCho Mọi Xưởng May",
+    "desc": "Khám phá bộ sưu tập 26 mẫu vải thun cao cấp của Cửa Hàng Tiến Phát Đạt với giá xuất xưởng tốt nhất.",
+    "image": "/images/banners/www.reallygreatsite.com_.png",
+    "btnText": "Xem Sản Phẩm",
+    "btnLink": "/san-pham"
+  },
+  {
+    "id": 2,
+    "title": "Nguồn Cung Ổn Định\nĐa Dạng Bảng Màu",
+    "desc": "Cam kết độ bền màu xuất sắc, co giãn đàn hồi cao, đáp ứng mọi đơn hàng lớn nhỏ của xưởng may toàn quốc.",
+    "image": "/images/banners/1-1.png",
+    "btnText": "Nhận Báo Giá",
+    "btnLink": "/lien-he"
+  },
+  {
+    "id": 3,
+    "title": "Vải May Local Brand\nChất Lượng Xuất Khẩu",
+    "desc": "Chuyên vải Cotton 2C, Cotton 4C định lượng cao, đanh mịn không xù lông cho các thương hiệu thời trang.",
+    "image": "/images/banners/localbrand.jpg",
+    "btnText": "Tìm Hiểu Ngay",
+    "btnLink": "/san-pham"
+  }
+]
