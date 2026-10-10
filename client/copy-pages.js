@@ -24,7 +24,7 @@ for (const file of files) {
 }
 
 // 2. Copy subdirectories with HTML files
-const subdirs = ['danh-muc', 'san-pham'];
+const subdirs = ['danh-muc', 'san-pham', 'tin-tuc'];
 for (const sub of subdirs) {
   const srcSub = path.join(clientDir, sub);
   const dstSub = path.join(distDir, sub);

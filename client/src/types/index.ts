@@ -37,6 +37,7 @@ export interface Post {
   images?: string[];
   date?: string;
   author?: string;
+  category?: string;
 }
 
 export interface Banner {

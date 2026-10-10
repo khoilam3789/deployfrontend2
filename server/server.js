@@ -127,11 +127,14 @@ async function initMongoDB() {
     }
 
     // Check & sync posts
-    const postCount = await Post.countDocuments();
-    if (postCount === 0 && fs.existsSync(postsPath)) {
+    if (fs.existsSync(postsPath)) {
       const pData = JSON.parse(fs.readFileSync(postsPath, 'utf-8'));
-      await Post.insertMany(pData);
-      console.log(`✓ Đã nạp ${pData.length} bài viết lên MongoDB Atlas!`);
+      const postCount = await Post.countDocuments();
+      if (postCount < pData.length) {
+        await Post.deleteMany({});
+        await Post.insertMany(pData);
+        console.log(`✓ Đã đồng bộ ${pData.length} bài viết lên MongoDB Atlas!`);
+      }
     }
   } catch (error) {
     isMongoConnected = false;
@@ -764,10 +767,21 @@ app.post('/api/admin/upload', authMiddleware, upload.single('image'), (req, res)
 // Serve static client production build if exists
 const clientDistPath = path.join(__dirname, '../client/dist');
 if (fs.existsSync(clientDistPath)) {
-  app.use(express.static(clientDistPath));
+  app.use(express.static(clientDistPath, { extensions: ['html'] }));
   app.get('*', (req, res, next) => {
     if (req.path.startsWith('/api') || req.path.startsWith('/images')) {
       return next();
+    }
+    if (req.path.startsWith('/admin')) {
+      const adminHtmlPath = path.join(clientDistPath, 'admin.html');
+      if (fs.existsSync(adminHtmlPath)) {
+        return res.sendFile(adminHtmlPath);
+      }
+    }
+    const cleanPath = req.path.replace(/\/$/, '');
+    const possibleHtml = path.join(clientDistPath, `${cleanPath}.html`);
+    if (fs.existsSync(possibleHtml)) {
+      return res.sendFile(possibleHtml);
     }
     res.sendFile(path.join(clientDistPath, 'index.html'));
   });
