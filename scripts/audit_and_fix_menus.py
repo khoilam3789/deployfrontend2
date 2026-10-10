@@ -103,6 +103,10 @@ def fix_html_file(filepath):
     # Remove emoji loader that fails with Unexpected token '<'
     content = re.sub(r'<script id="wp-emoji-settings"[\s\S]*?//# sourceURL=#wp-includes/js/wp-emoji-loader\.min\.js\s*</script>', '', content)
 
+    # 6. Ensure mobile-drawer.js is injected
+    if 'mobile-drawer.js' not in content:
+        content = content.replace('</body>', '<script src="js/mobile-drawer.js"></script>\n</body>')
+
     if content != orig_content:
         with open(filepath, 'w', encoding='utf-8') as f:
             f.write(content)

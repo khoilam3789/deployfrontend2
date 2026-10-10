@@ -5263,3 +5263,93 @@ span.count-up{
     	max-width: 50%;
 	}
 }
+
+/* ========================================================
+   Mobile Drawer & Backdrop Styling (Tiến Phát Đạt)
+   ======================================================== */
+#main-menu-backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: rgba(15, 23, 42, 0.65);
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	z-index: 99998;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#main-menu-backdrop.active {
+	opacity: 1;
+	visibility: visible;
+}
+#main-menu.mobile-sidebar {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 310px !important;
+	max-width: 85vw !important;
+	height: 100vh !important;
+	background: #ffffff !important;
+	z-index: 99999 !important;
+	box-shadow: 6px 0 30px rgba(0, 0, 0, 0.3) !important;
+	transform: translateX(-100%) !important;
+	transition: transform 0.32s cubic-bezier(0.16, 1, 0.3, 1) !important;
+	display: flex !important;
+	flex-direction: column !important;
+	overflow-y: auto !important;
+	-webkit-overflow-scrolling: touch !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+#main-menu.mobile-sidebar.drawer-active {
+	transform: translateX(0) !important;
+}
+.drawer-header-bar {
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+	padding: 16px 20px !important;
+	background: #0f172a !important;
+	border-bottom: 2px solid #F58634 !important;
+}
+.drawer-header-bar .drawer-close-btn {
+	color: #ffffff !important;
+	font-weight: 300 !important;
+}
+#main-menu .sidebar-menu {
+	padding: 15px 10px !important;
+}
+#main-menu .sidebar-menu ul.nav-sidebar > li {
+	border-bottom: 1px solid #f1f5f9 !important;
+}
+#main-menu .sidebar-menu ul.nav-sidebar > li > a {
+	padding: 12px 14px !important;
+	font-size: 14px !important;
+	font-weight: 700 !important;
+	color: #1e293b !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: space-between !important;
+}
+#main-menu .sidebar-menu ul.nav-sidebar > li > a:hover {
+	color: #F58634 !important;
+}
+#main-menu .sidebar-menu ul.children {
+	background: #f8fafc !important;
+	padding: 6px 0 8px 12px !important;
+	border-radius: 6px !important;
+	margin: 4px 10px 10px !important;
+}
+#main-menu .sidebar-menu ul.children > li > a {
+	padding: 8px 12px !important;
+	font-size: 13px !important;
+	color: #475569 !important;
+	font-weight: 600 !important;
+	display: block !important;
+}
+#main-menu .sidebar-menu ul.children > li > a:hover {
+	color: #F58634 !important;
+}
