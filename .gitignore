@@ -5,9 +5,9 @@ client/dist/
 .env
 server/.env
 *.log
-screenshot_*.png
-*_preview.png
-*_verified.png
+/screenshot_*.png
+/*preview*.png
+/*_verified.png
 docs/screenshots/
 backups/
 archive/

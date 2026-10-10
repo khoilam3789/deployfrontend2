@@ -9,23 +9,47 @@ Version: 3.0
 /*************** ADD CUSTOM CSS HERE.   ***************/
 @font-face{
   font-family: "PlusJakartaSans-Bold";
-  src:url(font/PlusJakartaSans-Bold.ttf);
+  src: url("font/PlusJakartaSans-Bold.ttf") format("truetype"),
+       url("../fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face{
   font-family: "PlusJakartaSans-Regular";
-  src:url(font/PlusJakartaSans-Regular.ttf);
+  src: url("font/PlusJakartaSans-Regular.ttf") format("truetype"),
+       url("../fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: "PlusJakartaSans-SemiBold";
+  src: url("font/PlusJakartaSans-SemiBold.ttf") format("truetype"),
+       url("../fonts/PlusJakartaSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face{
+  font-family: "PlusJakartaSans-Medium";
+  src: url("font/PlusJakartaSans-Medium.ttf") format("truetype"),
+       url("../fonts/PlusJakartaSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 body{
-	font-family: "PlusJakartaSans-Regular" !important;
+	font-family: "PlusJakartaSans-Regular", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
 }
-h1,h2,h3,h4{
-	font-family: "PlusJakartaSans-Bold" !important;
+h1,h2,h3,h4,h5,h6{
+	font-family: "PlusJakartaSans-Bold", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
 }
 * {
     scroll-behavior: smooth !important;
 }
 p{
-	font-family: "PlusJakartaSans-Regular";
+	font-family: "PlusJakartaSans-Regular", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
 }
 .img{
 	overflow: hidden;
@@ -3868,7 +3892,11 @@ a.button.btn_cat{
 .rt_count{
 	max-width: 1270px;
     margin: -75px auto 0;
-	padding-left: 100px;
+	padding-left: 0;
+	padding-right: 0;
+}
+span.count-up{
+	opacity: 1 !important;
 }
 .rt_count .block_count{
 	color: #fff;
@@ -4659,6 +4687,7 @@ a.button.btn_cat{
 	}
 	.rt_count{
 		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.rt_count .block_count > div{
 		display: flex;
@@ -4875,6 +4904,8 @@ a.button.btn_cat{
 	.rt_count{
 		max-width: 100%;
 		margin: 0;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.rt_count .block_count .number_count{
 		margin-bottom: 5px;

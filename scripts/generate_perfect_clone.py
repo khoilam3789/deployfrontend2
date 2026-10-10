@@ -59,11 +59,11 @@ html = re.sub(r"https://thangmay1\.mauthemewp\.com/wp-content/plugins/woocommerc
 html = re.sub(r"https://thangmay1\.mauthemewp\.com/wp-content/themes/flatsome/assets/js/flatsome\.js\?ver=[^'\"]+", "js/flatsome.js", html)
 html = re.sub(r"https://thangmay1\.mauthemewp\.com/wp-content/themes/flatsome/assets/js/woocommerce\.js\?ver=[^'\"]+", "js/woocommerce.js", html)
 
-# Add Font Awesome 6.5.1 + Roboto Google Fonts + Flickity in <head>
+# Add Font Awesome 6.5.1 + Plus Jakarta Sans + Roboto Google Fonts + Flickity in <head>
 head_addons = '''
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="css/flickity.min.css">
 <script src="js/flickity.pkgd.min.js"></script>
@@ -575,6 +575,81 @@ html = re.sub(r'https://thangmay1\.mauthemewp\.com/', '#', html)
 # ==============================================================================
 enhancement_script = """
 <style>
+/* ========================================================================== */
+/* EXACT TYPOGRAPHY OF ORIGINAL THANGMAY1 SITE (Plus Jakarta Sans)            */
+/* ========================================================================== */
+@font-face {
+  font-family: "PlusJakartaSans-Bold";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("css/font/PlusJakartaSans-Bold.ttf") format("truetype"),
+       url("fonts/PlusJakartaSans-Bold.ttf") format("truetype"),
+       local("Plus Jakarta Sans Bold"),
+       local("Plus Jakarta Sans");
+}
+
+@font-face {
+  font-family: "PlusJakartaSans-Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("css/font/PlusJakartaSans-Regular.ttf") format("truetype"),
+       url("fonts/PlusJakartaSans-Regular.ttf") format("truetype"),
+       local("Plus Jakarta Sans Regular"),
+       local("Plus Jakarta Sans");
+}
+
+@font-face {
+  font-family: "PlusJakartaSans-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("css/font/PlusJakartaSans-SemiBold.ttf") format("truetype"),
+       url("fonts/PlusJakartaSans-SemiBold.ttf") format("truetype"),
+       local("Plus Jakarta Sans SemiBold"),
+       local("Plus Jakarta Sans");
+}
+
+@font-face {
+  font-family: "PlusJakartaSans-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("css/font/PlusJakartaSans-Medium.ttf") format("truetype"),
+       url("fonts/PlusJakartaSans-Medium.ttf") format("truetype"),
+       local("Plus Jakarta Sans Medium"),
+       local("Plus Jakarta Sans");
+}
+
+/* Enforce modern geometric sans typography across all elements */
+body, button, input, select, textarea {
+  font-family: "PlusJakartaSans-Regular", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+
+p, li, .nav-vertical > li > a, .text-inner p {
+  font-family: "PlusJakartaSans-Regular", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.heading, 
+.heading-font, 
+.banner h1, 
+.banner h2, 
+.banner h3,
+.banner h4,
+.text-inner h1,
+.text-inner h2,
+.text-inner h3,
+.header-main .nav > li > a,
+.nav > li > a,
+.btn span, 
+a.button span,
+strong, 
+b {
+  font-family: "PlusJakartaSans-Bold", "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+
 /* CSS fix for social icons and search button */
 .top-bar-nav .icon-facebook:before, .social-icons .icon-facebook:before { content: "\\f39e" !important; font-family: "Font Awesome 6 Brands" !important; font-weight: 400 !important; }
 .top-bar-nav .icon-instagram:before, .social-icons .icon-instagram:before { content: "\\f16d" !important; font-family: "Font Awesome 6 Brands" !important; font-weight: 400 !important; }
