@@ -97,11 +97,9 @@ def fix_html_file(filepath):
     content = content.replace('src="#wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.8.2"', 'src="js/add-to-cart.min.js"')
     content = content.replace('src="#wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.8.2"', 'src="js/woocommerce.min.js"')
     content = content.replace('src="#wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js?ver=3.19.6"', 'src="js/flatsome-live-search.js"')
-    content = content.replace('src="#wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.8.2"', 'src="js/sourcebuster.min.js"')
-    content = content.replace('src="#wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.8.2"', 'src="js/order-attribution.min.js"')
-
-    # Remove emoji loader that fails with Unexpected token '<'
-    content = re.sub(r'<script id="wp-emoji-settings"[\s\S]*?//# sourceURL=#wp-includes/js/wp-emoji-loader\.min\.js\s*</script>', '', content)
+    # Remove order attribution scripts that cause undefined params error
+    content = re.sub(r'<script[^>]*src="[^"]*order-attribution\.min\.js"[^>]*></script>', '', content)
+    content = re.sub(r'<script id="wc-order-attribution-js-extra"[\s\S]*?</script>', '', content)
 
     # 6. Ensure mobile-drawer.js is injected
     if 'mobile-drawer.js' not in content:
