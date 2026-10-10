@@ -5,13 +5,12 @@ client/dist/
 .env
 server/.env
 *.log
-/screenshot_*.png
-/*preview*.png
-/*_verified.png
+/*.png
 docs/screenshots/
 backups/
 archive/
 source_thangmay1/
 source_vaithuntienphatdat/
 
+/client/index.original.html
 .vercel

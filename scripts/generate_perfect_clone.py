@@ -245,8 +245,8 @@ menu_thangmay = """<li id="menu-item-1949" class="menu-item menu-item-type-post_
 <li id="menu-item-3000" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3000 menu-item-design-default"><a href="https://thangmay1.mauthemewp.com/lien-he/" class="nav-top-link">Liên hệ</a></li>
 <li id="menu-item-3001" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3001 menu-item-design-default"><a href="#" class="nav-top-link">FAQ</a></li>"""
 
-menu_vaithun = """<li id="menu-item-1949" class="menu-item menu-item-type-post_type menu-item-home current-menu-item active menu-item-design-default"><a href="#" class="nav-top-link">Trang chủ</a></li>
-<li id="menu-item-2997" class="menu-item menu-item-design-default"><a href="#gioi-thieu" class="nav-top-link">Giới thiệu</a></li>
+menu_vaithun = """<li id="menu-item-1949" class="menu-item menu-item-type-post_type menu-item-home current-menu-item active menu-item-design-default"><a href="index.html" class="nav-top-link">Trang chủ</a></li>
+<li id="menu-item-2997" class="menu-item menu-item-design-default"><a href="gioi-thieu.html" class="nav-top-link">Giới thiệu</a></li>
 <li id="menu-item-3149" class="menu-item menu-item-has-children menu-item-design-default has-dropdown"><a href="#san-pham" class="nav-top-link" aria-expanded="false" aria-haspopup="menu">Sản phẩm<i class="icon-angle-down" ></i></a>
 <ul class="sub-menu nav-dropdown nav-dropdown-default">
 	<li id="menu-item-3150" class="menu-item"><a href="#san-pham">Vải Cotton &amp; Tici</a></li>
@@ -255,9 +255,9 @@ menu_vaithun = """<li id="menu-item-1949" class="menu-item menu-item-type-post_t
 	<li id="menu-item-3153" class="menu-item"><a href="#san-pham">Vải Mè, Nỉ &amp; Da Cá</a></li>
 </ul>
 </li>
-<li id="menu-item-3314" class="menu-item menu-item-design-default"><a href="#dich-vu" class="nav-top-link">Dịch vụ</a></li>
-<li id="menu-item-3225" class="menu-item menu-item-design-default"><a href="#kho-hang" class="nav-top-link">Kho Vải</a></li>
-<li id="menu-item-3000" class="menu-item menu-item-design-default"><a href="#lien-he" class="nav-top-link">Liên hệ</a></li>
+<li id="menu-item-3314" class="menu-item menu-item-design-default"><a href="chuyen-muc-dich-vu.html" class="nav-top-link">Dịch vụ</a></li>
+<li id="menu-item-3225" class="menu-item menu-item-design-default"><a href="du-an.html" class="nav-top-link">Kho Vải</a></li>
+<li id="menu-item-3000" class="menu-item menu-item-design-default"><a href="lien-he.html" class="nav-top-link">Liên hệ</a></li>
 <li id="menu-item-3001" class="menu-item menu-item-design-default"><a href="#tin-tuc" class="nav-top-link">Tin tức</a></li>"""
 html = html.replace(menu_thangmay, menu_vaithun)
 
@@ -277,8 +277,8 @@ sidebar_thangmay = """<li class="menu-item menu-item-type-post_type menu-item-ob
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3000"><a href="https://thangmay1.mauthemewp.com/lien-he/">Liên hệ</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3001"><a href="#">FAQ</a></li>"""
 
-sidebar_vaithun = """<li class="menu-item current-menu-item"><a href="#">Trang chủ</a></li>
-<li class="menu-item"><a href="#gioi-thieu">Giới thiệu</a></li>
+sidebar_vaithun = """<li class="menu-item current-menu-item"><a href="index.html">Trang chủ</a></li>
+<li class="menu-item"><a href="gioi-thieu.html">Giới thiệu</a></li>
 <li class="menu-item menu-item-has-children"><a href="#san-pham">Sản phẩm</a>
 <ul class="sub-menu nav-sidebar-ul children">
 	<li class="menu-item"><a href="#san-pham">Vải Cotton &amp; Tici</a></li>
@@ -287,9 +287,9 @@ sidebar_vaithun = """<li class="menu-item current-menu-item"><a href="#">Trang c
 	<li class="menu-item"><a href="#san-pham">Vải Mè, Nỉ &amp; Da Cá</a></li>
 </ul>
 </li>
-<li class="menu-item"><a href="#dich-vu">Dịch vụ</a></li>
-<li class="menu-item"><a href="#kho-hang">Kho Vải</a></li>
-<li class="menu-item"><a href="#lien-he">Liên hệ</a></li>
+<li class="menu-item"><a href="chuyen-muc-dich-vu.html">Dịch vụ</a></li>
+<li class="menu-item"><a href="du-an.html">Kho Vải</a></li>
+<li class="menu-item"><a href="lien-he.html">Liên hệ</a></li>
 <li class="menu-item"><a href="#tin-tuc">Tin tức</a></li>"""
 html = html.replace(sidebar_thangmay, sidebar_vaithun)
 
@@ -563,12 +563,17 @@ html = re.sub(r'src="https://www\.google\.com/maps/embed\?[^"]+"', f'src="{map_u
 # ==============================================================================
 html = re.sub(r'<div\s+class="twp-showdemo-bar"[\s\S]*?</div>\s*</div>', '', html)
 
-html = re.sub(r'https://thangmay1\.mauthemewp\.com/category/dich-vu/', '#dich-vu', html)
-html = re.sub(r'https://thangmay1\.mauthemewp\.com/project/du-an-da-thuc-hien/', '#kho-hang', html)
-html = re.sub(r'https://thangmay1\.mauthemewp\.com/gioi-thieu/', '#gioi-thieu', html)
-html = re.sub(r'https://thangmay1\.mauthemewp\.com/lien-he/', '#lien-he', html)
+html = re.sub(r'https://thangmay1\.mauthemewp\.com/category/dich-vu/', 'chuyen-muc-dich-vu.html', html)
+html = re.sub(r'https://thangmay1\.mauthemewp\.com/chuyen-muc/dich-vu/', 'chuyen-muc-dich-vu.html', html)
+html = re.sub(r'https://thangmay1\.mauthemewp\.com/project/du-an-da-thuc-hien/', 'du-an.html', html)
+html = re.sub(r'https://thangmay1\.mauthemewp\.com/gioi-thieu/', 'gioi-thieu.html', html)
+html = re.sub(r'https://thangmay1\.mauthemewp\.com/lien-he/', 'lien-he.html', html)
 html = re.sub(r'https://thangmay1\.mauthemewp\.com/danh-muc/[^"\']+', '#san-pham', html)
-html = re.sub(r'https://thangmay1\.mauthemewp\.com/', '#', html)
+html = re.sub(r'https://thangmay1\.mauthemewp\.com/', 'index.html', html)
+html = html.replace('href="/gioi-thieu/"', 'href="gioi-thieu.html"')
+html = html.replace('href="#dich-vu" class="button', 'href="chuyen-muc-dich-vu.html" class="button')
+html = html.replace('href="#kho-hang" class="button', 'href="du-an.html" class="button')
+html = re.sub(r'<a\s+class="button secondary phong-animated-pulse" style="border-radius:43px;">\s*<span>Xem thêm</span>', '<a href="gioi-thieu.html" class="button secondary phong-animated-pulse" style="border-radius:43px;"><span>Tìm Hiểu Thêm</span>', html)
 
 # ==============================================================================
 # 25. INJECT RUNTIME ENHANCEMENT SCRIPT & ICON CSS FIX
@@ -676,8 +681,10 @@ b {
 }
 
 /* FIX 2: Header Dark Translucent Frosted Glass Panel */
+#header,
+.header-wrapper,
 #header .header-main {
-  background: rgba(24, 30, 38, 0.88) !important;
+  background: rgba(24, 30, 38, 0.94) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
@@ -685,8 +692,10 @@ b {
   transition: all 0.3s ease !important;
 }
 
+#header.stuck,
+#header.stuck .header-wrapper,
 #header.stuck .header-main {
-  background: rgba(18, 23, 30, 0.96) !important;
+  background: rgba(18, 23, 30, 0.98) !important;
   backdrop-filter: blur(16px) !important;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.35) !important;
 }
