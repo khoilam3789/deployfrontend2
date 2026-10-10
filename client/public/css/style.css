@@ -5523,3 +5523,211 @@ span.count-up{
 		opacity: 0;
 	}
 }
+
+/* ========================================================
+   Section Contact Form (#section_1939356484 / .rt08)
+   Fix: Lệch phải, tràn màn hình trên desktop & mobile
+   ======================================================== */
+.rt08 {
+	overflow: hidden !important;
+	background: #f8fafc !important;
+}
+
+#row-1132980199 {
+	display: flex !important;
+	flex-wrap: wrap !important;
+	align-items: stretch !important;
+	margin: 0 !important;
+	width: 100% !important;
+	max-width: 100% !important;
+}
+
+/* Left Column: Image */
+#col-1119358252 {
+	flex: 0 0 100% !important;
+	max-width: 100% !important;
+	padding: 0 !important;
+}
+#col-1119358252 > .col-inner,
+#col-1119358252 .img,
+#col-1119358252 .img-inner {
+	height: 100% !important;
+	width: 100% !important;
+	margin: 0 !important;
+}
+#col-1119358252 img {
+	width: 100% !important;
+	height: 100% !important;
+	max-height: 360px !important;
+	object-fit: cover !important;
+	display: block !important;
+}
+
+/* Right Column: Form Container */
+#col-808884804 {
+	flex: 0 0 100% !important;
+	max-width: 100% !important;
+	background: #f8fafc !important;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	padding: 0 !important;
+	box-sizing: border-box !important;
+}
+#col-808884804 > .col-inner {
+	width: 100% !important;
+	max-width: 580px !important;
+	padding: 30px 20px 45px 20px !important;
+	margin: 0 auto !important;
+	box-sizing: border-box !important;
+}
+
+/* Heading */
+.rt08 .block__element_head {
+	margin-bottom: 22px !important;
+	text-align: left !important;
+}
+.rt08 .block__element_head .heading {
+	font-size: 24px !important;
+	font-weight: 800 !important;
+	color: #1e293b !important;
+	line-height: 1.35 !important;
+	margin: 0 !important;
+}
+
+/* Form Styles */
+.rt08 form {
+	width: 100% !important;
+	max-width: 100% !important;
+	margin: 0 auto !important;
+	box-sizing: border-box !important;
+}
+.rt08 .wpcf7 form p {
+	margin: 0 !important;
+	display: flex !important;
+	flex-direction: column !important;
+	gap: 14px !important;
+}
+.rt08 .wpcf7 form p > br {
+	display: none !important;
+}
+.rt08 .wpcf7 label,
+.rt08 .wpcf7-form-control-wrap {
+	display: block !important;
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.rt08 form input:not([type="submit"]),
+.rt08 form textarea {
+	display: block !important;
+	width: 100% !important;
+	max-width: 100% !important;
+	box-sizing: border-box !important;
+	font-family: inherit !important;
+	font-size: 14.5px !important;
+	color: #1e293b !important;
+	background: #ffffff !important;
+	border: 1.5px solid #cbd5e1 !important;
+	border-radius: 8px !important;
+	padding: 12px 16px !important;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04) !important;
+	transition: border-color 0.2s, box-shadow 0.2s !important;
+	outline: none !important;
+}
+.rt08 form input:not([type="submit"]):focus,
+.rt08 form textarea:focus {
+	border-color: #F58634 !important;
+	box-shadow: 0 0 0 3px rgba(245, 134, 52, 0.15) !important;
+}
+.rt08 form input:not([type="submit"])::placeholder,
+.rt08 form textarea::placeholder {
+	color: #94a3b8 !important;
+	opacity: 1 !important;
+}
+.rt08 form input:not([type="submit"]) {
+	height: 48px !important;
+}
+.rt08 form textarea {
+	height: 125px !important;
+	min-height: 90px !important;
+	max-height: 250px !important;
+	resize: vertical !important;
+}
+.rt08 form input.wpcf7-submit {
+	display: block !important;
+	width: 100% !important;
+	height: 50px !important;
+	margin-top: 6px !important;
+	margin-bottom: 0 !important;
+	padding: 0 24px !important;
+	background: linear-gradient(135deg, #F58634 0%, #ea580c 100%) !important;
+	color: #ffffff !important;
+	font-size: 15px !important;
+	font-weight: 700 !important;
+	letter-spacing: 0.5px !important;
+	text-transform: uppercase !important;
+	border: none !important;
+	border-radius: 8px !important;
+	box-shadow: 0 4px 14px rgba(245, 134, 52, 0.35) !important;
+	cursor: pointer !important;
+	transition: all 0.2s ease !important;
+}
+.rt08 form input.wpcf7-submit:hover {
+	background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%) !important;
+	box-shadow: 0 6px 20px rgba(245, 134, 52, 0.45) !important;
+	transform: translateY(-1px) !important;
+}
+
+/* Desktop layout (>= 851px) */
+@media screen and (min-width: 851px) {
+	#col-1119358252 {
+		flex: 0 0 50% !important;
+		max-width: 50% !important;
+	}
+	#col-1119358252 img {
+		max-height: none !important;
+		height: 100% !important;
+		min-height: 500px !important;
+	}
+	#col-808884804 {
+		flex: 0 0 50% !important;
+		max-width: 50% !important;
+	}
+	#col-808884804 > .col-inner {
+		padding: 60px 48px !important;
+		max-width: 540px !important;
+		margin: 0 auto !important;
+	}
+	.rt08 .block__element_head .heading {
+		font-size: 28px !important;
+	}
+}
+
+/* Mobile layout (<= 850px) */
+@media screen and (max-width: 850px) {
+	.rt08 {
+		margin-bottom: 25px !important;
+	}
+	#col-1119358252 img {
+		max-height: 260px !important;
+	}
+	#col-808884804 > .col-inner {
+		padding: 28px 18px 45px 18px !important;
+	}
+	.rt08 .block__element_head {
+		text-align: center !important;
+	}
+	.rt08 .block__element_head .heading {
+		font-size: 22px !important;
+	}
+}
+
+/* Global anti-overflow safety */
+html, body {
+	overflow-x: hidden !important;
+	max-width: 100% !important;
+}
+.slider, .row-slider {
+	overflow: hidden !important;
+}
