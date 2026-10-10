@@ -5338,6 +5338,10 @@ span.count-up{
 	color: #F58634 !important;
 }
 #main-menu .sidebar-menu ul.children {
+	position: static !important;
+	left: auto !important;
+	right: auto !important;
+	top: auto !important;
 	display: block !important;
 	opacity: 1 !important;
 	visibility: visible !important;
